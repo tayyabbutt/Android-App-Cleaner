@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Super Star Cleaner</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="system_cache">System cache</string>
+    <string name="junk_clean">Garbage cleaning</string>
+    <string name="process_clean">Process cleanup</string>
+    <string name="apk_clean">Useless installation package</string>
+    <string name="tmp_clean">Temporary Files</string>
+    <string name="log_clean">Log file</string>
+    <string name="cache_clean">Cache garbage</string>
+    <string name="title_activity_junk_clean">Recommended cleaning</string>
+    <string name="do_junk_clean">Clean up</string>
+
+
+    <string name="label_cancel">Cancel</string>
+    <string name="label_delete">Delete</string>
+    <string name="byte_short" translatable="false">B</string>
+    <!-- Suffix added to a number to signify size in kilobytes. -->
+    <string name="kilo_byte_short" translatable="false">KB</string>
+    <!-- Suffix added to a number to signify size in megabytes. -->
+    <string name="mega_byte_short" translatable="false">MB</string>
+    <!-- Suffix added to a number to signify size in gigabytes. -->
+    <string name="giga_byte_short" translatable="false">GB</string>
+    <!-- Suffix added to a number to signify size in terabytes. -->
+    <string name="tera_byte_short" translatable="false">TB</string>
+    <!-- Suffix added to a number to signify size in petabytes. -->
+    <string name="peta_byte_short" translatable="false">PB</string>
+
+    <string name="clean_file_size_suffix" translatable="false">%1$s%2$s</string>
+    <string name="title_activity_main_screen">MainScreen</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="cooler">CPU Cooler</string>
+    <string name="booster">Memory Booster</string>
+    <string name="manager">App Manager</string>
+    <string name="cleaner">Junk Cleaner</string>
+    <string name="Communicate">Communicate</string>
+    <string name="review">Review</string>
+    <string name="rateuse">Rate us</string>
+    <string name="bigfolder">Delete Big Files</string>
+
+    <string name="banner" translatable="false">	ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="bannerappid" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <!--<string name="banner">ca-app-pub-3940256099942544~6300978111</string>-->
+
+
+    <string name="permissionstring">need prmission to perform task</string>
+    <string name="marketerror">unable to find market app</string>
+    <string name="clearjunk">press to clear Junk</string>
+    <string name="Scanning">Scanning</string>
+    <string name="Storage">Storage</string>
+    <string name="UNINSTAL">UNINSTAL</string>
+    <string name="Waitingforscanning">Waiting for scanning</string>
+    <string name="exception">Cleanup system cache exception！</string>
+    <string name="clean">Clean</string>
+    <string name="Foundtogether">Found together</string>
+
+    <!--activity label in manifest-->
+    <string name="coolerlabel">CPU Cooler</string>
+    <string name="managerlabel">App Manager</string>
+    <string name="boosterlabel">Memory Booster</string>
+    <string name="junkcleaner">Junk Cleaner</string>
+</resources>

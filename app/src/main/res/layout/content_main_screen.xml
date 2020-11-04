@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.softronix.cleaner.views.MainScreen"
+    tools:showIn="@layout/app_bar_main_screen">
+
+    <RelativeLayout
+        android:id="@+id/animationCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="35dp"
+        android:gravity="start">
+
+        <ImageView
+            android:id="@+id/junkclear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/booster_layout"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/circle_img"
+            android:visibility="gone" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/booster_layout"
+            app:lottie_fileName="round.json"
+            app:lottie_loop="true" />
+
+        <RelativeLayout
+            android:id="@+id/junkclearbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/booster_layout"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:foregroundGravity="center"
+
+            android:gravity="center"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/percent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+
+                android:textColor="@color/yellow"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/storage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/percent"
+                android:gravity="center"
+
+                android:text="@string/Scanning"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/storage1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/storage"
+                android:layout_alignStart="@+id/percent"
+                android:layout_alignEnd="@+id/percent"
+                android:gravity="center"
+                android:text="@string/Storage"
+                android:textColor="@color/yellow" />
+
+            <TextView
+                android:id="@+id/clicktclear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/storage1"
+                android:layout_alignStart="@+id/percent"
+                android:layout_alignEnd="@+id/percent"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/yellow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/booster_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/boosterbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/memory_boost_btn" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/boosterbtn"
+                android:gravity="center"
+                android:text="@string/booster"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!--bottom-->
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adView"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/cpu_cooler_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/coolerbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/cpu_cooler_btn" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coolerbtn"
+                android:gravity="center"
+                android:text="@string/cooler"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/deleteFilesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/cpu_cooler_layout"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/deleteFiles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:src="@drawable/big_file_icon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/deleteFiles"
+                android:gravity="center"
+                android:text="@string/bigfolder"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/appmanager_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/booster_layout"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/manager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:src="@drawable/app_manager_btn" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/manager"
+                android:gravity="center"
+                android:text="@string/manager"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner" />
+
+</RelativeLayout>

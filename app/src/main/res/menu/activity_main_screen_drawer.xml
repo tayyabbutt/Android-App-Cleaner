@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cooler"
+            android:icon="@drawable/cpu_fan_icon"
+            android:title="@string/cooler" />
+        <item
+            android:id="@+id/nav_booster"
+            android:icon="@drawable/memory_boost_icon"
+            android:title="@string/booster" />
+        <item
+            android:id="@+id/nav_appmanager"
+            android:icon="@drawable/app_manager_icon"
+            android:title="@string/manager" />
+        <item
+            android:id="@+id/nav_Junkcleaner"
+            android:icon="@drawable/storage_icon"
+            android:title="@string/cleaner" />
+        <item
+            android:id="@+id/nav_bigFolder"
+            android:icon="@drawable/bigside_file_icon"
+            android:title="@string/bigfolder"/>
+    </group>
+
+    <item android:title="@string/Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_Review"
+                android:icon="@drawable/feedback_icon"
+                android:title="@string/review" />
+            <item
+                android:id="@+id/nav_rateus"
+                android:icon="@drawable/rating_icon"
+                android:title="@string/rateuse" />
+        </menu>
+    </item>
+
+</menu>

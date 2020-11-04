@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.softronix.cleaner.views.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:text="Hello World! this has to be on point and right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click me "
+        android:layout_below="@+id/text"
+        android:id="@+id/btn"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="file manager"
+            android:id="@+id/manager"
+            android:layout_toEndOf="@+id/btn"
+            android:layout_below="@+id/text"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Application manager"
+            android:layout_below="@+id/text"
+            android:layout_toEndOf="@+id/manager"
+            android:id="@+id/appmanager"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkjunkfile"
+        android:text="check junk file"
+        android:layout_below="@+id/btn" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/checkjunkfile"
+        android:layout_below="@id/btn"
+        android:id="@+id/checkfiletext"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="clear"
+            android:id="@+id/clear"
+            android:layout_below="@+id/checkjunkfile"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="animation"
+            android:layout_below="@+id/clear"
+            android:id="@+id/animibtn"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lottie_fileName="done.json"
+            android:id="@+id/animation"
+            android:layout_below="@+id/animibtn"/>
+    </RelativeLayout>
+</ScrollView>

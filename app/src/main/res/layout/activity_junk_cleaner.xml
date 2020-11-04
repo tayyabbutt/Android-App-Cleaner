@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.softronix.cleaner.views.junkcleaner.JunkCleaner">
+
+
+    <com.marozzi.roundbutton.RoundButton
+        android:id="@+id/do_junk_clean"
+        style="@style/TextStyle194"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/adView"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="Clean"
+        app:rb_animation_alpha="true"
+        app:rb_animation_duration="500"
+        app:rb_animation_progress_color="@color/colorPrimary"
+        app:rb_animation_progress_style="dots"
+        app:rb_background_color="@android:color/transparent"
+        app:rb_background_color_pressed="@color/colorPrimary"
+        app:rb_corner_color="@color/colorPrimary"
+        app:rb_corner_color_pressed="@color/colorPrimary"
+        app:rb_corner_radius="10dp"
+        app:rb_corner_width="2dp"
+        app:rb_text_color="@color/colorPrimary"
+        app:rb_text_color_pressed="@android:color/white" />
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner" />
+
+    <RelativeLayout
+        android:id="@+id/doneAnimationlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/doneAnimation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:lottie_fileName="done.json"
+            app:lottie_loop="true" />
+
+        <TextView
+            android:id="@+id/doneTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doneAnimation"
+            android:layout_alignParentTop="false"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Ram Clean"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/junk_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/do_junk_clean" />
+
+</RelativeLayout>
